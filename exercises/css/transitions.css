@@ -1,0 +1,85 @@
+body{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrap{
+    width: 720px;
+    margin: 0 auto;
+    
+}
+hgroup{
+    text-align: center;
+}
+h1{
+    font-size:4rem;
+}
+h1, h2{
+    cursor: default;
+}
+
+/***********Transitions excercise*************/
+#main-title{
+    text-shadow: -4px 0px 8px #eb212e; 
+    transition: all 3s;
+}
+#main-title:hover{
+    color:#eb212e;
+    text-shadow: -4px 0px 8px #000; 
+}
+#sub-title{
+    opacity: 0.1;
+    line-height: 2rem;
+    transition: opacity 5s, font-size 4s ease-in-out 1s;
+}
+#sub-title:hover{
+    opacity: 1; 
+    font-size:2rem;
+}
+/*******Transforms examples********/
+#thumbs-img{
+    transition: transform 1s linear;
+}
+#thumbs-up:hover ~.img-container #thumbs-img{
+    transform:rotate(-90deg);
+}
+#thumbs-down:hover ~.img-container #thumbs-img{
+    transform: rotate(90deg);
+}
+.transforms-examples, .try-transforms{
+    text-align: center
+}
+.transforms-examples a{
+    display: inline-block;
+    width:45%;
+}
+
+/************Transforms excercise********************/
+
+.try-transforms a{
+    display: inline-block;
+    width:30%;
+}
+.try-transforms a+a{
+    margin-left:2%;
+}
+.try-transforms .img-container{
+    width: 50%;
+    margin:40px auto;
+}
+#ww-logo{
+    max-width: 100%;
+    transition: transform 5s, transform 3s;
+}
+#translate:hover ~.img-container #ww-logo{
+    transform: translate(-360px, -360px);
+}
+#scale:hover ~.img-container #ww-logo{
+    transform: scaleX(2);
+}
+#rotate:hover ~.img-container #ww-logo{
+    transform: rotate(180deg);
+}
+.transforms-examples, .try-transforms{
+    text-align: center
+}
