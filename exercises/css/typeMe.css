@@ -1,0 +1,19 @@
+#typeMe { 
+    font: bold 2em monospace;
+    color: #eb212e;
+    border-right: .1em solid #848484;
+    width: 19ch;
+    line-height: 0.9em;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(19, end),
+               blink-caret .5s step-end infinite alternate;
+}
+
+@keyframes typing { 
+    from { width: 0; } 
+}
+@keyframes blink-caret { 
+    50% { border-color: transparent; } 
+}
