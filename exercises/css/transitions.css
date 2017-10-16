@@ -36,23 +36,7 @@ h1, h2{
     opacity: 1; 
     font-size:2rem;
 }
-/*******Transforms examples********/
-#thumbs-img{
-    transition: transform 1s linear;
-}
-#thumbs-up:hover ~.img-container #thumbs-img{
-    transform:rotate(-90deg);
-}
-#thumbs-down:hover ~.img-container #thumbs-img{
-    transform: rotate(90deg);
-}
-.transforms-examples, .try-transforms{
-    text-align: center
-}
-.transforms-examples a{
-    display: inline-block;
-    width:45%;
-}
+
 
 /************Transforms excercise********************/
 
